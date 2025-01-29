@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Event Bingo Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <textarea id="event-list" placeholder="Enter your 24 events for 2025, one per line..."></textarea>
+    
+    <div class="button-container">
+        <button id="generate" onclick="generateBingoCard()">Generate Bingo Card</button>
+        <button id="save" onclick="downloadBingoCard()">Save Bingo Card as JSON</button>
+        <input type="file" id="load-file" accept=".json" style="display:none;" onchange="uploadBingoCard(event)">
+        <button id="load" onclick="document.getElementById('load-file').click()">Load Bingo Card from JSON</button>
+        <button id="clear" onclick="clearBingoCard()">Clear Bingo Card</button>
+    </div>    
+
+    <div class="bingo-card" id="bingo-card">
+        <div class="bingo-cell">Event 1</div>
+        <div class="bingo-cell">Event 2</div>
+        <div class="bingo-cell">Event 3</div>
+        <div class="bingo-cell">Event 4</div>
+        <div class="bingo-cell">Event 5</div>
+        <div class="bingo-cell">Event 6</div>
+        <div class="bingo-cell">Event 7</div>
+        <div class="bingo-cell">Event 8</div>
+        <div class="bingo-cell">Event 9</div>
+        <div class="bingo-cell">Event 10</div>
+        <div class="bingo-cell">Event 11</div>
+        <div class="bingo-cell">Event 12</div>
+        <div class="bingo-cell free">FREE</div>
+        <div class="bingo-cell">Event 13</div>
+        <div class="bingo-cell">Event 14</div>
+        <div class="bingo-cell">Event 15</div>
+        <div class="bingo-cell">Event 16</div>
+        <div class="bingo-cell">Event 17</div>
+        <div class="bingo-cell">Event 18</div>
+        <div class="bingo-cell">Event 19</div>
+        <div class="bingo-cell">Event 20</div>
+        <div class="bingo-cell">Event 21</div>
+        <div class="bingo-cell">Event 22</div>
+        <div class="bingo-cell">Event 23</div>
+        <div class="bingo-cell">Event 24</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
